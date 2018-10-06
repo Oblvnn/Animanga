@@ -1,0 +1,248 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Muli:300');
+
+/* Main CSS */
+:root {
+  --main: rgb(183, 213, 223) !important;
+  --main-dark: rgb(171, 195, 206) !important;
+}
+
+body {
+  word-wrap: inherit;
+  color: #333 !important;
+  font-family: 'Muli', sans-serif !important;
+  background-color: rgb(240, 240, 240) !important;
+}
+
+a {
+  color: #333 !important;
+}
+
+a:hover {
+  color: #111 !important;
+  text-decoration-line: none !important;
+}
+
+.background {
+  background: url("../img/mirai.png") no-repeat bottom left, url("../img/mirai_2.png") no-repeat bottom right;
+  background-attachment: fixed;
+  background-size: 20vw;
+}
+
+.main-display {
+  padding-left: 50px;
+}
+
+.footer {
+  font-size: 30px;
+  padding-bottom: 10px;
+  text-shadow:
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;  
+}
+
+.box-yt {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-size: 100% !important;
+  background-position-y: -50px !important;
+  color: #fff;
+  font-size: 60px;
+  height: auto;
+}
+
+.canon-title {
+  padding-bottom: 8px;
+  padding-left: 4px;
+}
+
+.title {
+  font-weight: 400;
+}
+
+.related-images {
+  width: 104.3px;
+  margin-bottom: 45px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.top-button {
+  margin-right: 15px !important
+}
+
+/* Accordion CSS */
+ .accordion {
+  margin-top: 10px;
+  background-color: var(--main);
+  color: rgb(33, 37, 41);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: var(--main-dark);
+}
+
+.panel {
+  padding-top: 10px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Bootstrap CSS */
+
+.nav-item > .nav-link {
+  color: rgb(83, 83, 83) !important;
+}
+
+.nav-link > .active {
+  color: rgb(83, 83, 83) !important;
+  border-radius: 3px !important;
+  font-weight: bold !important;
+}
+
+.nav-link:hover {
+  color: rgb(44, 44, 44) !important;
+}
+
+.jumbotron {
+  padding-bottom: 10px !important;
+  background-color: var(--main) !important;
+}
+
+.display-4 {
+  padding-top: 20px;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.card-header {
+  background-color: var(--main) !important;
+  border-bottom: none !important;
+}
+
+.card-body > a {
+  font-weight: bold;
+}
+
+.card-body > ul > li > a{
+  font-weight: bold;
+}
+
+.input-group-append > .btn-outline-secondary {
+  color: #ddd !important;
+  background-color: #fff !important;
+  border-color: #ced4da !important;
+  border-left: none !important;
+}
+
+.input-group-append > .btn-outline-secondary:hover {
+  color: #bbb !important;
+  background-color: #fff !important;
+  border-color: #ced4da !important;
+  border-left: none !important;
+}
+
+.input-group-append > .btn-outline-secondary:focus {
+  color: #bbb !important;
+  background-color: #fff !important;
+  border-color: #ced4da !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0) !important;
+}
+
+.form-control:focus {
+  border-color: #ced4da !important;
+  border-right: none !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0) !important;
+}
+
+.btn-outline-secondary {
+  color: #bbb !important;
+  background-color: #fff !important;
+  border-color: #ced4da !important;
+}
+
+.btn-outline-secondary:hover {
+  color: #aaa !important;
+  background-color: #eee !important;
+  border-color: #ced4da !important;
+}
+
+.btn-outline-secondary:focus {
+  color: #aaa !important;
+  background-color: #eee !important;
+  border-color: #ced4da !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-brand {
+  color: #333 !important;
+  font-size: 25px !important;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: var(--main-dark) !important;
+}
+
+.table {
+  margin-bottom: 0px !important;
+}
+
+/* FontAwesome CSS */
+.fa-discord {
+  color: #7289DA;
+  transition: 0.4s
+}
+
+.fa-twitter {
+  color: #55acee;
+  transition: 0.4s
+}
+
+.fa-github {
+  color: #2C2F33;
+  transition: 0.4s
+}
+
+.fa-heart {
+  color: #fc4323;
+  transition: 0.4s
+}
+
+.fa-youtube {
+  color: #ff0000;
+  transition: 0.4s;  
+}
+
+.fa-discord:hover {
+  color: rgb(96, 113, 177);
+}
+
+.fa-twitter:hover {
+  color: #4488bd;
+}
+
+.fa-github:hover {
+  color: rgb(27, 28, 31);
+}
+
+.fa-heart:hover {
+  color: #d43b20;
+}
+
+.fa-youtube:hover {
+  color: #d10000 !important;
+}
