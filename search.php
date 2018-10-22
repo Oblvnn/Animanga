@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php
       if(isset($_GET['anime'])) { 
-        $query = str_replace(' ', '%20', htmlspecialchars($_GET['anime']));
+        $query = str_replace(' ', '%20', $_GET['anime']);
         $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[text]='.$query), true);
         $data = $json['data'][0]['attributes'];?>
     <meta property="og:image" content="<?php echo $data['posterImage']['small']?>"/>
@@ -16,7 +16,7 @@
     <title>Search | <?php echo $data['canonicalTitle'];?></title>
     <?php } 
       if(isset($_GET['manga'])) { 
-        $query = str_replace(' ', '%20', htmlspecialchars($_GET['manga']));
+        $query = str_replace(' ', '%20', $_GET['manga']);
         $json = json_decode(file_get_contents('https://kitsu.io/api/edge/manga?filter[text]='.$query), true);
         $data = $json['data'][0]['attributes'];?>
     <meta property="og:image" content="<?php echo $data['posterImage']['small']?>"/>
@@ -91,7 +91,7 @@
               error_reporting(0);
               if(isset($_GET['anime']))
               {
-                  $query = str_replace(' ', '%20', htmlspecialchars($_GET['anime']));
+                  $query = str_replace(' ', '%20', $_GET['anime']);
                   $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[text]='.$query), true);
                   $data = $json['data'][0]['attributes'];?>
             <div class="container">
@@ -142,7 +142,7 @@
               error_reporting(0);
               if(isset($_GET['manga']))
               {
-                  $query = str_replace(' ', '%20', htmlspecialchars($_GET['manga']));
+                  $query = str_replace(' ', '%20', $_GET['manga']);
                   $json = json_decode(file_get_contents('https://kitsu.io/api/edge/manga?filter[text]='.$query), true);
                   $data = $json['data'][0]['attributes'];?>
             <div class="container">
