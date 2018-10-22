@@ -27,7 +27,7 @@
 </head>
 <body class="background">
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <a class="navbar-brand" href="./">Animanga</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+    <a class="navbar-brand" href="/">Animanga</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -68,7 +68,7 @@
             <div class="card-header"><b><?php echo $dataAtt['canonicalTitle'];?></b> [<?php echo $data['id'];?>]</div>
             <div class="card-body">
               <div class="media">
-                <a href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img style="border-radius: 3px;" class="mr-3" src="<?php echo $dataAtt['posterImage']['tiny']?>"></a>
+                <a href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img style="border-radius: 3px;" class="mr-3" src="<?php echo $dataAtt['posterImage']['tiny']?>"></a>
                 <div class="media-body">
                   <h5 class="mt-0"></h5>
                   <div class="table-responsive">
@@ -104,7 +104,7 @@
             <div class="card-header"><b><?php echo $dataAtt['canonicalTitle'];?></b> [<?php echo $data['id'];?>]</div>
             <div class="card-body">
               <div class="media">
-                <a href="./search?manga=<?php echo $dataAtt['canonicalTitle']; ?>"><img style="border-radius: 3px;" class="mr-3" src="<?php echo $dataAtt['posterImage']['tiny']?>"></a>
+                <a href="/search?manga=<?php echo $dataAtt['canonicalTitle']; ?>"><img style="border-radius: 3px;" class="mr-3" src="<?php echo $dataAtt['posterImage']['tiny']?>"></a>
                 <div class="media-body">
                   <h5 class="mt-0"></h5>
                   <div class="table-responsive">

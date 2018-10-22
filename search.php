@@ -45,7 +45,7 @@
   </head>
   <body class="background">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="./">Animanga</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+      <a class="navbar-brand" href="/">Animanga</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -134,7 +134,7 @@
                 <h4>Related</h4>
                 <?php foreach($json['data'] as $data) { 
                 $dataAtt = $data['attributes'];?>
-                <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+                <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
                 <?php } ?>
               </div>
             </div>
@@ -183,7 +183,7 @@
                 <h4>Related</h4>
                 <?php foreach($json['data'] as $data) { 
                 $dataAtt = $data['attributes'];?>
-                <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?manga=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+                <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?manga=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
                 <?php } ?>
               </div>
             </div>

@@ -24,7 +24,7 @@
   </head>
   <body class="background">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="./">Animanga</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+      <a class="navbar-brand" href="/">Animanga</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -100,7 +100,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=adventure'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="action">
@@ -108,7 +108,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=action'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="cars">
@@ -116,7 +116,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=cars'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="comedy">
@@ -124,7 +124,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=comedy'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="dementia">
@@ -132,7 +132,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=dementia'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="demons">
@@ -140,7 +140,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=demons'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="drama">
@@ -148,7 +148,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=drama'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="ecchi">
@@ -156,7 +156,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=ecchi'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="fantasy">
@@ -164,7 +164,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=fantasy'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="game">
@@ -172,7 +172,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=game'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="harem">
@@ -180,7 +180,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=harem'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="historical">
@@ -188,7 +188,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=historical'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="horror">
@@ -196,7 +196,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=horror'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="kids">
@@ -204,7 +204,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=kids'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="magic">
@@ -212,7 +212,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=magic'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="martial-arts">
@@ -220,7 +220,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=martial%20arts'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="mecha">
@@ -228,7 +228,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=mecha'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="military">
@@ -236,7 +236,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=military'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
       <div style="padding-top: 60px;" id="music">
@@ -244,7 +244,7 @@
         <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=music'), true);
         foreach($json['data'] as $data) { 
         $dataAtt = $data['attributes']; error_reporting(0);?>
-        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+        <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
         <?php } ?>
       </div>
     </div>
@@ -253,7 +253,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=mystery'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="parody">
@@ -261,7 +261,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=parody'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="police">
@@ -269,7 +269,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=police'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="psychological">
@@ -277,7 +277,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=psychological'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="romance">
@@ -285,7 +285,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=romance'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="samurai">
@@ -293,7 +293,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=samurai'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="school">
@@ -301,7 +301,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=school'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="sci-fi">
@@ -309,7 +309,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=sci-fi'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="shoujo">
@@ -317,7 +317,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=shoujo'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="shoujo-ai">
@@ -325,7 +325,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=shoujo-ai'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="shounen">
@@ -333,7 +333,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=shounen'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="shounen-ai">
@@ -341,7 +341,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=shounen-ai'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="slice-of-life">
@@ -349,7 +349,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=slice-of-life'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="space">
@@ -357,7 +357,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=space'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="sports">
@@ -365,7 +365,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=sports'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="super-power">
@@ -373,7 +373,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=super-power'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="supernatural">
@@ -381,7 +381,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=supernatural'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="thriller">
@@ -389,7 +389,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=thriller'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="vampire">
@@ -397,7 +397,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=vampire'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="yaoi">
@@ -405,7 +405,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=yaoi'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     <div style="padding-top: 60px;" id="yuri">
@@ -413,7 +413,7 @@
       <?php $json = json_decode(file_get_contents('https://kitsu.io/api/edge/anime?filter[genres]=yuri'), true);
       foreach($json['data'] as $data) { 
       $dataAtt = $data['attributes']; error_reporting(0);?>
-      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="./search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+      <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
       <?php } ?>
     </div>
     </div>

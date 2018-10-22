@@ -24,7 +24,7 @@
   </head>
   <body class="background">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="./">Animanga</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+      <a class="navbar-brand" href="/">Animanga</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -55,9 +55,9 @@
     <div class="card">
     <div class="card-header"><h5>Welcome to <b>Animanga</b> - Anime and Manga lookup made easy!</h5></div>
     <div class="card-body">
-      Head over to <a href="./search">Search</a> if you would like to lookup Anime or Manga, your result will also display related Animes/Mangas.<br>
-      You can also check out <a href="./trending">Trending</a> to see what's currently Trending in the Anime and Manga community.<br>
-      Click the <a href="./genres">Genres</a> section to view all types of animes from different genres.<br>
+      Head over to <a href="/search">Search</a> if you would like to lookup Anime or Manga, your result will also display related Animes/Mangas.<br>
+      You can also check out <a href="/trending">Trending</a> to see what's currently Trending in the Anime and Manga community.<br>
+      Click the <a href="/genres">Genres</a> section to view all types of animes from different genres.<br>
       Other supported projects.
       <ul>
         <li><a href="https://weebs.cf">Weebs.CF</a> - Index for Weeb based projects.</li>
