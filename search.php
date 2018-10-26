@@ -49,7 +49,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="search"><div class="active">Search</div></a>
+            <a class="nav-link active" href="search">Search</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="trending">Trending</a>
@@ -61,6 +61,12 @@
             <a class="nav-link" href="https://status.oblivionsan.tk" target="_blank">Status</a>
           </li>
         </ul>
+        <div class="nav-social">
+          <a target="_blank" href="https://discord.oblivionsan.tk"><i class="fab fa-discord"></i></a>
+          <a target="_blank" href="https://twitter.com/OblivionSan"><i class="fab fa-twitter"></i></a>
+          <a target="_blank" href="https://github.com/OblivionSan"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://oblivionsan.tk"><i class="fas fa-heart"></i></a>
+        </div>
       </div>
     </nav>
     <!-- end of nav -->
@@ -191,9 +197,6 @@
           </div>
         </div>
     <!-- end of main -->
-    <footer class="footer text-center fixed-bottom">
-      <a target="_blank" style="padding-right:5px;" href="https://discord.oblivionsan.tk"><i class="fab fa-discord"></i></a><a target="_blank" style="padding-right:5px;" href="https://twitter.com/OblivionSan"><i class="fab fa-twitter"></i></a><a target="_blank" style="padding-right:5px;" href="https://github.com/OblivionSan"><i class="fab fa-github"></i></a><a href="https://oblivionsan.tk" title="Developed by Oblivion さん"><i class="fas fa-heart"></i></a>
-    </footer>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
