@@ -3,8 +3,8 @@
 
 /* Main CSS */
 :root {
-  --main: rgb(183, 213, 223) !important;
-  --main-dark: rgb(171, 195, 206) !important;
+  --main: #FBD0D0 !important;
+  --main-dark: #E6B2B7 !important;
 }
 
 body {
@@ -129,7 +129,7 @@ a:hover {
 
 .nav-item > .nav-link:hover {
   color: rgb(83, 83, 83) !important;
-  background-color: rgba(171, 195, 206, .5);
+  background-color: rgba(230, 178, 183, 0.5);
   border-radius: 2rem;
   transition: 0.4s;
 }
