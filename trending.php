@@ -15,7 +15,7 @@
   <meta property="og:description" content="Welcome to Animanga. Anime and Manga lookup made easy."/>
   <link rel="icon" href="assets/img/icon.png" type="image/x-icon"/>
   <link rel="shortcut icon" href="assets/img/icon.png"type="image/x-icon"/>
-  <meta name="theme-color" content="#b7d5df">
+  <meta name="theme-color" content="#FBD0D0">
   <!-- CSS & JS -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
