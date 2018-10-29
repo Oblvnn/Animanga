@@ -425,7 +425,7 @@
     </div>
     <!-- end of main -->
     <footer class="footer text-center fixed-bottom">
-      <button onclick="topFunction()" class="btn btn-outline-secondary float-right top-button"><i class="fas fa-angle-up"></i></button>
+      <button onclick="topFunction()" class="btn float-right top-button"><i class="fas fa-angle-up"></i></button>
     </footer>
     <script>
       function topFunction() {
