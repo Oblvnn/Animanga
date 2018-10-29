@@ -93,16 +93,22 @@ a:hover {
   background-color: var(--main);
   color: rgb(33, 37, 41);
   cursor: pointer;
-  padding: 18px;
+  padding-top: 19px !important;
+  padding-bottom: 19px !important;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+  border-radius: 1rem;
 }
 
 .accordion:hover {
   background-color: var(--main-dark);
+}
+
+.accordion:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0) !important;
 }
 
 .panel {
@@ -118,12 +124,14 @@ a:hover {
 .nav-item > .nav-link {
   color: rgb(83, 83, 83) !important;
   margin-right: 3px;
+  transition: 0.4s;
 }
 
 .nav-item > .nav-link:hover {
   color: rgb(83, 83, 83) !important;
   background-color: rgba(171, 195, 206, .5);
   border-radius: 2rem;
+  transition: 0.4s;
 }
 
 .nav-item > .active {
@@ -149,11 +157,14 @@ a:hover {
 
 .card {
   margin-bottom: 10px;
+  border-radius: 1rem !important;
 }
 
 .card-header {
   background-color: var(--main) !important;
   border-bottom: none !important;
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
 }
 
 .card-body > a {
@@ -231,6 +242,25 @@ a:hover {
 
 .table {
   margin-bottom: 0px !important;
+}
+
+.popover {
+  max-width: 370px !important;
+  margin-bottom: 15px !important;
+  border-radius: 1rem !important;
+}
+
+.popover-header {
+  background-color: var(--main) !important;
+  border-bottom: none !important;
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
+}
+
+.popover-body > .btn {
+  background-color: var(--main) !important;
+  padding: none!important;
+  font-size: .875rem !important;
 }
 
 /* FontAwesome CSS */

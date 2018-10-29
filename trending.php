@@ -146,6 +146,12 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover({html:true});
+        $('.popover-dismiss').popover({
+          trigger: 'focus'
+        })
+      });
   </script>
 </body>
 </html>

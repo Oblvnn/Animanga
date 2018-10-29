@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home | Animanga</title>
+    <title>Animanga</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:site_name" content="Animanga.CF" />
     <meta property="og:image" content="https://animanga.cf/assets/img/icon.png"/>
     <meta property="og:url" content="https://animanga.cf/"/>
-    <meta property="og:title" content="Home | Animanga"/>
+    <meta property="og:title" content="Animanga"/>
     <meta property="og:description" content="Welcome to Animanga. Anime and Manga lookup made easy."/>
     <link rel="icon" href="assets/img/icon.png" type="image/x-icon"/>
     <link rel="shortcut icon" href="assets/img/icon.png"type="image/x-icon"/>
@@ -52,7 +52,7 @@
     <main>
       <div class="jumbotron jumbotron-fluid">
         <div class="main-display">
-          <h1 class="display-4">Home - 自宅</h1>
+          <h1 class="display-4">Animanga - アニメ漫画</h1>
           <p class="lead">Anime and Manga lookup made easy.</p>
         </div>
       </div>

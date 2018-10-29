@@ -123,12 +123,12 @@
                           </tr>
                           <tr>
                             <td>
-                              <button class="accordion text-center"><b>Click for Synopsis</b></button>
+                              <button class="btn accordion text-center"><b>Click for Synopsis</b></button>
                               <div class="panel"><?php echo $data['synopsis'];?></div>
                             </td>
                           </tr>
                           <tr>
-                            <td><div class="box-yt text-center" style="background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(<?php echo $data['coverImage']['original'];?>);"><a class="button-yt" target="_blank" href="https://www.youtube.com/watch?v=<?php echo $data['youtubeVideoId'];?>"><i class="fab fa-youtube"></i></a></div></td>
+                            <td><a target="_blank" href="https://www.youtube.com/watch?v=<?php echo $data['youtubeVideoId'];?>"><div class="box-yt text-center" style="background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(<?php echo $data['coverImage']['original'];?>);"><i class="fab fa-youtube"></i></div></a></td>
                           </tr>
                         </tbody>
                       </table>
@@ -140,7 +140,7 @@
                 <h4>Related</h4>
                 <?php foreach($json['data'] as $data) { 
                 $dataAtt = $data['attributes'];?>
-                <a title="<?php echo $dataAtt['canonicalTitle'];?>" href="/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>"><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
+                <a title="<?php echo $dataAtt['canonicalTitle'];?>" data-content="<?php echo htmlspecialchars(mb_strimwidth($dataAtt['synopsis'], 0, 250, '...<hr>'));?><a class='btn' href='/search?anime=<?php echo $dataAtt['canonicalTitle']; ?>'>More Info</a> <b>Click card to dismiss.</b>" data-toggle="popover" data-trigger="focus" tabindex="0" ><img class="related-images" src="<?php echo $dataAtt['posterImage']['small']?>"></a>
                 <?php } ?>
               </div>
             </div>
@@ -211,6 +211,12 @@
           }
         });
       }
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover({html:true});
+        $('.popover-dismiss').popover({
+          trigger: 'focus'
+        })
+      });
     </script>
   </body>
 </html>
