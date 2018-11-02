@@ -45,7 +45,7 @@ a:hover {
 
 .box-yt {
   margin-top: 20px;
-  border-radius: 5px;
+  border-radius: 1rem;
   background-size: 100% !important;
   background-position-y: -50px !important;
   color: #fff;
@@ -98,6 +98,7 @@ a:hover {
   width: 100%;
   text-align: left;
   border: none;
+  border-radius: 1rem;
   outline: none;
   transition: 0.4s;
   border-radius: 1rem;
@@ -120,7 +121,6 @@ a:hover {
 }
 
 /* Bootstrap CSS */
-
 .nav-item > .nav-link {
   color: rgb(83, 83, 83) !important;
   margin-right: 3px;

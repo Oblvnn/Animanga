@@ -14,8 +14,8 @@
     <link rel="shortcut icon" href="assets/img/icon.png"type="image/x-icon"/>
     <meta name="theme-color" content="#FBD0D0">
     <!-- CSS & JS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.1/css/all.css">
     <script src="assets/js/main.js"></script>
     <script src="assets/js/jquery.min.js"></script>
